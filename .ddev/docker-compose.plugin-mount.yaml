@@ -1,0 +1,6 @@
+# Mount the version-controlled custom plugin into the (gitignored) WordPress core docroot.
+# Keeps WordPress core out of the repo while the plugin source stays at wp-content/plugins/.
+services:
+  web:
+    volumes:
+      - ../wp-content/plugins/asc-digital-ministry:/var/www/html/wordpress/wp-content/plugins/asc-digital-ministry

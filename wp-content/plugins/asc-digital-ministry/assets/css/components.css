@@ -1,0 +1,713 @@
+/*
+ * Components. Each is an `asc-*` class applied to ordinary editor blocks
+ * (Group, Cover, Columns, Buttons) or Avada containers via "CSS Class", so
+ * editors keep full control of the words and images inside them.
+ */
+
+/* ---------- Primitives ---------- */
+.asc-eyebrow {
+	font-family: var(--asc-font-sans);
+	font-size: var(--asc-text-sm);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--asc-color-primary);
+	margin-block-end: var(--asc-space-xs);
+	display: flex;
+	align-items: center;
+	gap: 0.85em;
+}
+.asc-eyebrow::before {
+	content: "";
+	flex: none;
+	inline-size: 1.75rem;
+	block-size: 2px;
+	background: var(--asc-color-accent);
+}
+.asc-eyebrow a { color: inherit; text-decoration: none; }
+
+.asc-lede {
+	font-size: var(--asc-text-lg);
+	color: var(--asc-color-text-muted);
+	max-inline-size: var(--asc-measure);
+}
+
+.asc-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--asc-space-xs);
+	margin-block-start: var(--asc-space-md);
+}
+
+/* Buttons: plugin buttons and core Button blocks share one style. */
+.asc-button,
+:where(.wp-block-button) .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	min-block-size: 2.875rem;               /* ≥ 44px target */
+	padding: 0.7em 1.4em;
+	border: 2px solid var(--asc-color-primary);
+	border-radius: var(--asc-radius-pill);
+	background: var(--asc-color-primary);
+	color: #fff;
+	font-family: var(--asc-font-sans);
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color var(--asc-duration) var(--asc-ease), border-color var(--asc-duration) var(--asc-ease), color var(--asc-duration) var(--asc-ease), transform var(--asc-duration) var(--asc-ease-out), box-shadow var(--asc-duration) var(--asc-ease);
+}
+.asc-button:hover,
+:where(.wp-block-button) .wp-block-button__link:hover {
+	background: var(--asc-color-primary-strong);
+	border-color: var(--asc-color-primary-strong);
+	color: #fff;
+	transform: translateY(-1px);
+	box-shadow: 0 10px 24px -12px rgb(142 15 23 / 0.6);
+}
+.asc-button--quiet,
+:where(.wp-block-button.is-style-outline) .wp-block-button__link {
+	background: transparent;
+	color: var(--asc-color-secondary);
+	border-color: currentColor;
+}
+.asc-button--quiet:hover,
+:where(.wp-block-button.is-style-outline) .wp-block-button__link:hover {
+	background: var(--asc-color-secondary);
+	border-color: var(--asc-color-secondary);
+	color: #fff;
+}
+
+/* ---------- Sections ---------- */
+.asc-section {
+	padding-block: var(--asc-space-xl);
+	padding-inline: var(--asc-gutter);
+}
+.asc-section > * { margin-inline: auto; max-inline-size: var(--asc-content-width); }
+.asc-section--surface { background: var(--asc-color-surface); }
+.asc-section--alt { background: var(--asc-color-surface-alt); }
+.asc-section--tight { padding-block: var(--asc-space-lg); }
+
+.asc-section-heading {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: space-between;
+	gap: var(--asc-space-sm);
+	margin-block-end: var(--asc-space-lg);
+}
+.asc-section-heading :is(h2, p) { margin: 0; }
+.asc-section-heading a { font-weight: 600; text-decoration: none; }
+
+/* ---------- Hero (core Group with a background image + .asc-hero) ----------
+ * Editors change the photo in the block's Styles → Background image panel.
+ */
+.asc-hero {
+	position: relative;
+	isolation: isolate;
+	display: flex;
+	align-items: flex-end;
+	min-block-size: min(90vh, 52rem);
+	padding: var(--asc-space-xl) var(--asc-gutter) calc(var(--asc-space-xl) + var(--asc-space-lg));
+	background-color: var(--asc-color-secondary);
+	background-size: cover;
+	color: var(--asc-color-on-dark);
+}
+.asc-hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background:
+		radial-gradient(120% 90% at 0% 100%, rgb(7 29 68 / 0.92) 0%, rgb(7 29 68 / 0.55) 45%, transparent 75%),
+		linear-gradient(0deg, rgb(7 29 68 / 0.7) 0%, transparent 55%),
+		linear-gradient(180deg, rgb(7 29 68 / 0.35) 0%, transparent 25%);
+}
+@media (max-width: 48rem) {
+	.asc-hero::before { background: linear-gradient(0deg, rgb(7 29 68 / 0.94) 15%, rgb(7 29 68 / 0.5) 100%); }
+}
+.asc-hero__content {
+	inline-size: 100%;
+	max-inline-size: var(--asc-content-wide);
+	margin-inline: auto !important;
+}
+.asc-hero__content > * { max-inline-size: 40rem; }
+.asc-hero h1 {
+	color: #fff;
+	font-size: var(--asc-text-display);
+	line-height: 0.98;
+	letter-spacing: -0.03em;
+	max-inline-size: 13ch;
+	margin-block: 0 var(--asc-space-md);
+	text-shadow: 0 2px 30px rgb(7 29 68 / 0.35);
+}
+.asc-hero p:not(.asc-eyebrow) { max-inline-size: 34rem; }
+@media (prefers-reduced-motion: no-preference) {
+	.asc-hero__content > * { animation: asc-rise 900ms var(--asc-ease-out) both; }
+	.asc-hero__content > :nth-child(2) { animation-delay: 90ms; }
+	.asc-hero__content > :nth-child(3) { animation-delay: 180ms; }
+	.asc-hero__content > :nth-child(4) { animation-delay: 270ms; }
+}
+@keyframes asc-rise {
+	from { opacity: 0; translate: 0 1.25rem; }
+	to { opacity: 1; translate: 0 0; }
+}
+.asc-hero .asc-eyebrow { color: var(--asc-color-accent-soft); }
+.asc-hero p:not(.asc-eyebrow) { font-size: var(--asc-text-lg); color: var(--asc-color-on-dark); }
+.asc-hero .wp-block-button.is-style-outline .wp-block-button__link { color: #fff; border-color: rgb(255 255 255 / 0.7); background: rgb(255 255 255 / 0.08); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.asc-hero .wp-block-button.is-style-outline .wp-block-button__link:hover { background: #fff; color: var(--asc-color-secondary); }
+
+/* ---------- Service times / location ---------- */
+.asc-service-times.wp-block-group {
+	position: relative;
+	z-index: 1;
+	margin-block: var(--asc-space-md);
+	margin-inline: max(var(--asc-gutter), (100% - var(--asc-content-wide)) / 2);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+	gap: 0;
+	background: var(--asc-color-surface);
+	border-radius: var(--asc-radius-lg);
+	box-shadow: var(--asc-shadow-md);
+	overflow: hidden;
+}
+/* Directly after the hero, the card overlaps its lower edge so times sit above the fold. */
+.asc-hero + .asc-service-times.wp-block-group,
+.asc-hero + .wp-block-block > .asc-service-times,
+.asc-hero + .asc-service-times { margin-block-start: calc(var(--asc-space-xl) * -1); }
+
+.asc-time-card {
+	padding: var(--asc-space-md);
+	border-block-end: 1px solid var(--asc-color-border);
+}
+@media (min-width: 48rem) {
+	.asc-time-card { border-block-end: 0; border-inline-end: 1px solid var(--asc-color-border); }
+	.asc-time-card:last-child { border-inline-end: 0; }
+}
+.asc-time-card :is(h2, h3) {
+	font-size: var(--asc-text-lg);
+	margin: 0 0 var(--asc-space-2xs);
+}
+.asc-time-card .asc-time {
+	font-family: var(--asc-font-serif);
+	font-size: var(--asc-text-h3);
+	color: var(--asc-color-primary);
+	line-height: 1.15;
+	margin: 0;
+}
+.asc-time-card p { margin-block: var(--asc-space-2xs); }
+.asc-time-card--location { background: var(--asc-color-secondary); color: var(--asc-color-on-dark); }
+.asc-time-card--location :is(h2, h3) { color: #fff; }
+.asc-time-card--location a { color: var(--asc-color-accent-soft); }
+
+/* ---------- Split (core Media & Text + .asc-split) ---------- */
+.asc-split.wp-block-media-text { gap: var(--asc-space-lg); }
+.asc-split .wp-block-media-text__media img {
+	border-radius: var(--asc-radius-lg);
+	box-shadow: var(--asc-shadow-md);
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+.asc-split .wp-block-media-text__content { padding-inline: 0; }
+.asc-checklist { list-style: none; padding: 0; display: grid; gap: var(--asc-space-xs); }
+.asc-checklist li {
+	padding-inline-start: 1.75rem;
+	position: relative;
+}
+.asc-checklist li::before {
+	content: "";
+	position: absolute;
+	inset-inline-start: 0;
+	inset-block-start: 0.55em;
+	inline-size: 0.7rem;
+	block-size: 0.7rem;
+	background: var(--asc-color-primary);
+	/* small Jerusalem-cross mark */
+	clip-path: polygon(35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%, 0 35%, 35% 35%);
+}
+
+/* ---------- Cards (Group with grid layout + .asc-card-grid) ---------- */
+.asc-card-grid {
+	display: grid !important;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
+	gap: var(--asc-space-md);
+}
+@media (min-width: 64rem) {
+	/* Bento: with four or more cards, the first becomes the feature and spans two rows. */
+	.asc-card-grid:has(> .asc-card:nth-child(4)) { grid-template-columns: 1.6fr 1fr 1fr; }
+	.asc-card-grid:has(> .asc-card:nth-child(4)) > .asc-card:first-child { grid-row: span 2; }
+	.asc-card-grid:has(> .asc-card:nth-child(4)) > .asc-card:first-child .wp-block-image { flex: 1; }
+	.asc-card-grid:has(> .asc-card:nth-child(4)) > .asc-card:first-child .wp-block-image img { block-size: 100%; aspect-ratio: auto; min-block-size: 18rem; }
+	.asc-card-grid:has(> .asc-card:nth-child(4)) > .asc-card:first-child h3 { font-size: var(--asc-text-h3); }
+	.asc-card-grid:has(> .asc-card:nth-child(4)) > .asc-card:not(:first-child) .wp-block-image img { aspect-ratio: 16 / 9; }
+	/* Exactly four: the last card spans the remaining two columns, image beside text. */
+	.asc-card-grid > .asc-card:nth-child(4):last-child { grid-column: span 2; display: grid; grid-template: 1fr auto auto 1fr / 48% 1fr; }
+	.asc-card-grid > .asc-card:nth-child(4):last-child .wp-block-image { grid-area: 1 / 1 / -1 / 2; }
+	.asc-card-grid > .asc-card:nth-child(4):last-child .wp-block-image img { block-size: 100%; aspect-ratio: auto; }
+	.asc-card-grid > .asc-card:nth-child(4):last-child > :not(.wp-block-image) { grid-column: 2; }
+	.asc-card-grid > .asc-card:nth-child(4):last-child > h3 { grid-row: 2; }
+	.asc-card-grid > .asc-card:nth-child(4):last-child > p { grid-row: 3; }
+}
+.asc-card {
+	display: flex;
+	flex-direction: column;
+	background: var(--asc-color-surface);
+	border-radius: var(--asc-radius-lg);
+	overflow: hidden;
+	box-shadow: var(--asc-shadow-sm);
+	transition: box-shadow var(--asc-duration) var(--asc-ease), transform var(--asc-duration) var(--asc-ease);
+}
+.asc-card:hover { box-shadow: var(--asc-shadow-md); transform: translateY(-2px); }
+.asc-card .wp-block-image { margin: 0; overflow: hidden; }
+.asc-card .wp-block-image img {
+	inline-size: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	display: block;
+	transition: scale 700ms var(--asc-ease-out);
+}
+.asc-card:hover .wp-block-image img { scale: 1.05; }
+.asc-card > :not(.wp-block-image) { padding-inline: var(--asc-space-md); margin-inline: 0; max-inline-size: none; }
+.asc-card h3 { font-size: var(--asc-text-lg); margin-block: var(--asc-space-md) var(--asc-space-2xs); }
+.asc-card h3 a { color: inherit; text-decoration: none; }
+.asc-card h3 a::after { content: ""; position: absolute; inset: 0; } /* whole card clickable */
+.asc-card { position: relative; }
+.asc-card p { color: var(--asc-color-text-muted); margin-block: 0 var(--asc-space-md); }
+
+/* ---------- Prayer band ---------- */
+.asc-prayer {
+	background:
+		radial-gradient(circle at 85% 20%, rgb(227 180 106 / 0.16), transparent 40%),
+		var(--asc-color-secondary);
+	color: var(--asc-color-on-dark);
+	text-align: center;
+}
+.asc-prayer h2 { color: #fff; }
+.asc-prayer p { max-inline-size: 40rem; margin-inline: auto; }
+.asc-prayer .asc-eyebrow { color: var(--asc-color-accent-soft); justify-content: center; }
+.asc-prayer .asc-eyebrow::before { background: var(--asc-color-accent-soft); }
+.asc-prayer blockquote, .asc-prayer .wp-block-quote {
+	border: 0;
+	font-family: var(--asc-font-serif);
+	font-style: italic;
+	font-size: var(--asc-text-lg);
+	color: var(--asc-color-accent-soft);
+	margin-inline: auto;
+	padding: 0;
+}
+.asc-prayer .wp-block-buttons { justify-content: center; }
+.asc-prayer .wp-block-button__link { background: #fff; border-color: #fff; color: var(--asc-color-secondary); }
+.asc-prayer .wp-block-button__link:hover { background: var(--asc-color-accent-soft); border-color: var(--asc-color-accent-soft); color: var(--asc-color-secondary-strong); }
+
+/* ---------- Page intro + prose ---------- */
+.asc-page { padding-block-end: var(--asc-space-xl); }
+.asc-page-intro {
+	padding-block: var(--asc-space-lg) var(--asc-space-md);
+	padding-inline: var(--asc-gutter);
+}
+.asc-page-intro h1 { margin-block: 0 var(--asc-space-xs); }
+.asc-prose { max-inline-size: var(--asc-measure); }
+
+/* ---------- News list (core Latest Posts + .asc-news) ---------- */
+.asc-news.wp-block-latest-posts {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+	gap: var(--asc-space-md);
+	padding: 0;
+}
+.asc-news.wp-block-latest-posts li {
+	background: var(--asc-color-surface);
+	border-radius: var(--asc-radius-lg);
+	padding: var(--asc-space-md);
+	box-shadow: var(--asc-shadow-sm);
+	border-block-start: 3px solid var(--asc-color-accent);
+	margin: 0;
+	transition: box-shadow var(--asc-duration) var(--asc-ease), transform var(--asc-duration) var(--asc-ease);
+}
+.asc-news.wp-block-latest-posts li:hover { box-shadow: var(--asc-shadow-md); transform: translateY(-2px); }
+.asc-news .wp-block-latest-posts__post-title {
+	font-family: var(--asc-font-serif);
+	font-size: var(--asc-text-lg);
+	color: var(--asc-color-secondary);
+	text-decoration: none;
+	line-height: 1.25;
+}
+.asc-news .wp-block-latest-posts__post-date { color: var(--asc-color-text-muted); font-size: var(--asc-text-sm); }
+
+/* ---------- Chips ---------- */
+.asc-chips { display: flex; flex-wrap: wrap; gap: var(--asc-space-2xs); list-style: none; padding: 0; margin: 0; }
+.asc-chip {
+	padding: 0.2em 0.75em;
+	border-radius: 999px;
+	background: var(--asc-color-surface-alt);
+	color: var(--asc-color-secondary);
+	font-size: var(--asc-text-sm);
+	font-weight: 600;
+}
+
+/* ---------- Header + footer (theme template parts tagged with these classes) ---------- */
+header.wp-block-template-part:has(> .asc-site-header) {
+	position: sticky;
+	inset-block-start: var(--wp-admin--admin-bar--height, 0px);
+	z-index: 100;
+}
+/* The frosted glass lives on ::before: a backdrop-filter on the header itself would
+ * become the containing block for the mobile menu overlay and trap it inside the bar. */
+.asc-site-header {
+	position: relative;
+	border-block-end: 1px solid rgb(226 218 203 / 0.7);
+	padding-inline: var(--asc-gutter);
+}
+.asc-site-header::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: rgb(255 255 255 / 0.82);
+	-webkit-backdrop-filter: saturate(1.6) blur(14px);
+	backdrop-filter: saturate(1.6) blur(14px);
+}
+@supports (animation-timeline: scroll()) {
+	.asc-site-header::before { animation: asc-header-lift linear both; animation-timeline: scroll(root); animation-range: 0 160px; }
+}
+@keyframes asc-header-lift {
+	to { box-shadow: 0 10px 30px -18px rgb(11 42 96 / 0.45); background: rgb(255 255 255 / 0.94); }
+}
+.asc-site-header .wp-block-site-logo img { inline-size: clamp(9rem, 7.5rem + 3.5vw, 11rem); block-size: auto; }
+.asc-site-header__bar { padding-block: 0.55rem; }
+.asc-site-header .wp-block-navigation { font-weight: 600; font-size: 1rem; }
+.asc-site-header .wp-block-navigation a { text-decoration: none; }
+.asc-site-header .wp-block-navigation .wp-block-navigation__submenu-container {
+	border: 1px solid var(--asc-color-border) !important;
+	border-radius: var(--asc-radius-sm);
+	box-shadow: var(--asc-shadow-md);
+	padding-block: var(--asc-space-2xs);
+}
+.asc-header-cta .wp-block-button__link { padding: 0.55em 1.1em; min-block-size: 2.75rem; }
+
+.asc-site-footer {
+	background: var(--asc-color-secondary-strong);
+	color: var(--asc-color-on-dark);
+	padding: var(--asc-space-xl) var(--asc-gutter) var(--asc-space-md);
+	font-size: var(--asc-text-sm);
+}
+.asc-site-footer :is(h2, h3) {
+	color: var(--asc-color-accent-soft);
+	font-family: var(--asc-font-sans);
+	font-size: var(--asc-text-sm);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	margin-block: 0 var(--asc-space-sm);
+}
+.asc-site-footer .wp-block-columns { gap: var(--asc-space-lg); }
+.asc-site-footer p { line-height: 1.75; }
+.asc-footer-cta.wp-block-group {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--asc-space-md);
+	padding-block-end: var(--asc-space-lg);
+	margin-block-end: var(--asc-space-lg);
+	border-block-end: 1px solid rgb(248 245 238 / 0.14);
+}
+.asc-footer-cta > * { margin: 0; }
+.asc-site-footer .asc-footer-cta h2 {
+	color: #fff;
+	font-family: var(--asc-font-serif);
+	font-size: var(--asc-text-h2);
+	font-weight: 500;
+	letter-spacing: var(--asc-tracking-tight);
+	text-transform: none;
+	margin: 0;
+}
+.asc-site-footer .asc-footer-cta p { font-size: var(--asc-text-lg); color: rgb(248 245 238 / 0.8); margin: var(--asc-space-2xs) 0 0; }
+.asc-site-footer .asc-footer-cta .wp-block-button.is-style-outline .wp-block-button__link { color: #fff; border-color: rgb(255 255 255 / 0.6); }
+.asc-site-footer .asc-footer-cta .wp-block-button.is-style-outline .wp-block-button__link:hover { background: #fff; color: var(--asc-color-secondary); }
+.asc-site-footer a { color: var(--asc-color-on-dark); }
+.asc-site-footer a:hover { color: var(--asc-color-accent-soft); }
+.asc-site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.35rem; }
+.asc-site-footer .asc-footer-legal {
+	border-block-start: 1px solid rgb(248 245 238 / 0.18);
+	margin-block-start: var(--asc-space-lg);
+	padding-block-start: var(--asc-space-sm);
+	opacity: 0.8;
+}
+
+/* ---------- Calendar embed ---------- */
+.asc-calendar iframe {
+	inline-size: 100%;
+	min-block-size: 40rem;
+	border: 0;
+	border-radius: var(--asc-radius-md);
+	background: var(--asc-color-surface);
+}
+@media (max-width: 40rem) {
+	.asc-calendar iframe { min-block-size: 32rem; }
+}
+
+/* ---------- Layout fixes for the landing template ---------- */
+.asc-landing { margin-block: 0; }
+.asc-landing > .wp-block-post-content > :first-child,
+main.asc-landing { margin-block-start: 0 !important; }
+.asc-landing > .wp-block-post-content > .alignfull + .alignfull { margin-block-start: 0; }
+:is(.asc-time-card, .asc-card, .asc-section, .asc-hero__content) > :first-child { margin-block-start: 0; }
+
+/* Phones: the hero already carries "Plan Your Visit"; keep the header to logo + menu. */
+@media (max-width: 40rem) {
+	.asc-site-header .wp-block-buttons.asc-header-cta { display: none; }
+	.asc-site-header .wp-block-site-logo img { inline-size: 8.25rem; }
+}
+
+/* ---------- Page bottom: no stray gap above the footer ---------- */
+footer.wp-block-template-part:has(> .asc-site-footer) { margin-block-start: 0; }
+main:has(.wp-block-post-content) { margin-block-end: 0; padding-block-end: var(--asc-space-xl); }
+main:has(.wp-block-post-content > :is(.alignfull, .wp-block-block):last-child) { padding-block-end: 0; }
+.wp-block-post-content > :is(.alignfull, .wp-block-block):last-child,
+.wp-block-post-content > .wp-block-block:last-child > .alignfull:last-child { margin-block-end: 0; }
+
+/* ---------- People lists (captioned portraits on a staff page) ----------
+ * Any page whose captioned photos include email links is treated as a staff list:
+ * a round portrait beside the name and role instead of a page-wide photo.
+ */
+.wp-block-post-content:has(figcaption a[href^="mailto:"]) > figure.wp-block-image:has(> figcaption) {
+	display: grid;
+	grid-template-columns: clamp(6rem, 4rem + 8vw, 9rem) 1fr;
+	align-items: start;
+	gap: var(--asc-space-md);
+	margin-block: var(--asc-space-md);
+}
+.wp-block-post-content:has(figcaption a[href^="mailto:"]) > figure.wp-block-image:has(> figcaption) img {
+	inline-size: 100%;
+	block-size: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+	object-position: 50% 20%;
+	border-radius: 50%;
+	box-shadow: var(--asc-shadow-sm);
+}
+.wp-block-post-content:has(figcaption a[href^="mailto:"]) > figure.wp-block-image:has(> figcaption) figcaption {
+	margin: 0;
+	text-align: start;
+	font-size: var(--asc-text-base);
+	line-height: 1.45;
+	color: var(--asc-color-text-muted);
+}
+.wp-block-post-content:has(figcaption a[href^="mailto:"]) > figure.wp-block-image:has(> figcaption) figcaption a:first-child {
+	font-family: var(--asc-font-serif);
+	font-size: var(--asc-text-lg);
+	color: var(--asc-color-secondary);
+	text-decoration: none;
+}
+
+/* ---------- Mobile navigation (core Navigation overlay) ---------- */
+/* Bigger tap targets; WordPress decides when the buttons show, so no display here. */
+.asc-site-header :is(.wp-block-navigation__responsive-container-open, .wp-block-navigation__responsive-container-close) {
+	padding: 0.5rem;
+	margin: -0.5rem -0.5rem -0.5rem 0;
+	border-radius: 50%;
+	color: var(--asc-color-secondary);
+}
+.asc-site-header :is(.wp-block-navigation__responsive-container-open, .wp-block-navigation__responsive-container-close) svg { inline-size: 1.75rem; block-size: 1.75rem; }
+.asc-site-header .wp-block-navigation__responsive-container.is-menu-open {
+	padding: 1rem var(--asc-gutter) 2rem;
+	background: var(--asc-color-background) !important;
+	color: var(--asc-color-secondary) !important;
+}
+.asc-site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-block-start: 3.5rem;
+	align-items: stretch;
+	gap: 0;
+}
+.asc-site-header .is-menu-open .wp-block-navigation__container { align-items: stretch !important; gap: 0 !important; inline-size: 100%; }
+.asc-site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item {
+	inline-size: 100%;
+	align-items: stretch !important;
+	border-block-end: 1px solid var(--asc-color-border);
+	padding-block: 0.4rem;
+}
+.asc-site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+	font-family: var(--asc-font-serif);
+	font-size: 1.6rem;
+	font-weight: 500;
+	padding-block: 0.35rem;
+}
+.asc-site-header .is-menu-open .wp-block-navigation__submenu-container {
+	padding: 0 0 0.5rem 0.25rem !important;
+	gap: 0 !important;
+	border: 0 !important;
+	box-shadow: none !important;
+}
+.asc-site-header .is-menu-open .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	display: block;
+	padding-block: 0.45rem !important;
+	font-size: 1.05rem;
+	font-weight: 500;
+	color: var(--asc-color-text-muted);
+}
+.asc-site-header .is-menu-open .wp-block-navigation__submenu-icon { display: none; }
+.asc-site-header .wp-block-navigation__responsive-container.is-menu-open {
+	--navigation-layout-justification-setting: flex-start;
+	--navigation-layout-justify: flex-start;
+	--navigation-layout-align: flex-start;
+	text-align: start;
+}
+.asc-site-header .is-menu-open :is(.wp-block-navigation__container, .wp-block-navigation-item, .wp-block-navigation__submenu-container) { align-items: flex-start !important; }
+body:has(.wp-block-navigation__responsive-container.is-menu-open) .asc-chat { display: none; }
+
+/* ---------- Phones ---------- */
+@media (max-width: 40rem) {
+	/* On phones the admin bar scrolls away, so the sticky header pins to the very top. */
+	header.wp-block-template-part:has(> .asc-site-header) { inset-block-start: 0; }
+
+	.asc-hero { min-block-size: min(84svh, 40rem); padding-block-end: calc(var(--asc-space-xl) + var(--asc-space-md)); }
+	.asc-hero .asc-eyebrow { letter-spacing: 0.1em; font-size: 0.8rem; }
+	.asc-hero h1 { max-inline-size: none; }
+
+	/* Service times: a compact list rather than four tall boxes. */
+	.asc-time-card { padding: var(--asc-space-sm) var(--asc-space-md); }
+	.asc-time-card :is(h2, h3) { font-size: 1.1rem; }
+	.asc-time-card .asc-time { font-size: 1.45rem; }
+	.asc-time-card p:not(.asc-time) { font-size: 0.95rem; line-height: 1.45; }
+
+	/* Ministry cards: image beside text, not a page-wide photo each. */
+	.asc-card-grid { gap: var(--asc-space-sm); }
+	.asc-card-grid > .asc-card {
+		display: grid;
+		grid-template: 1fr auto auto 1fr / 7.5rem 1fr;
+		column-gap: var(--asc-space-sm);
+		border-radius: var(--asc-radius-md);
+	}
+	.asc-card-grid > .asc-card .wp-block-image { grid-area: 1 / 1 / -1 / 2; position: relative; min-block-size: 7.5rem; }
+	/* Absolutely positioned so the photo's natural height can't stretch the card. */
+	.asc-card-grid > .asc-card .wp-block-image img { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; aspect-ratio: auto; }
+	.asc-card-grid > .asc-card > :not(.wp-block-image) { grid-column: 2; padding-inline: 0 var(--asc-space-sm); }
+	.asc-card-grid > .asc-card > h3 { grid-row: 2; font-size: 1.15rem; margin-block: var(--asc-space-sm) 0.15rem; }
+	.asc-card-grid > .asc-card > p { grid-row: 3; font-size: 0.92rem; line-height: 1.45; margin-block-end: var(--asc-space-sm); }
+
+	.asc-section-heading { margin-block-end: var(--asc-space-md); }
+
+	.asc-site-footer .asc-footer-cta h2 { font-size: 2rem; }
+	.asc-site-footer .asc-footer-cta p { font-size: 1rem; }
+	.asc-site-footer { padding-block-end: 6rem; } /* clear the chat button */
+	.asc-site-footer ul { gap: 0.15rem; }
+	.asc-site-footer li a { display: inline-block; padding-block: 0.35rem; }
+}
+
+/* ---------- Scroll reveal ----------
+ * CSS scroll-driven animation: no JS. Browsers without support, and visitors
+ * who prefer reduced motion, simply see everything immediately.
+ */
+@media (prefers-reduced-motion: no-preference) {
+	@supports (animation-timeline: view()) {
+		.asc-section > :not(.asc-card-grid, .asc-sermon-archive),
+		.asc-card-grid > .asc-card,
+		.asc-sermon-grid > .asc-sermon-card,
+		.asc-news > li {
+			animation: asc-reveal linear both;
+			animation-timeline: view();
+			animation-range: entry 0% entry 30%;
+		}
+	}
+}
+@keyframes asc-reveal {
+	from { opacity: 0; translate: 0 2rem; }
+	to { opacity: 1; translate: 0 0; }
+}
+
+/* ---------- News list (posts page + category archives) ---------- */
+.asc-post-list .wp-block-post-template { gap: var(--asc-space-md); }
+.asc-post-card {
+	display: flex;
+	flex-direction: column;
+	block-size: 100%;
+	padding: var(--asc-space-md);
+	background: var(--asc-color-surface);
+	border-radius: var(--asc-radius-lg);
+	border-block-start: 3px solid var(--asc-color-accent);
+	box-shadow: var(--asc-shadow-sm);
+	transition: box-shadow var(--asc-duration) var(--asc-ease), transform var(--asc-duration) var(--asc-ease);
+}
+.asc-post-card:hover { box-shadow: var(--asc-shadow-md); transform: translateY(-2px); }
+.asc-post-card > * { margin-block: 0; }
+.asc-post-card__date { order: -1; font-size: var(--asc-text-sm); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--asc-color-primary); }
+.asc-post-card__title { font-size: var(--asc-text-h3); margin-block: var(--asc-space-2xs) var(--asc-space-xs); }
+.asc-post-card__title a { color: var(--asc-color-secondary); text-decoration: none; }
+.asc-post-card__title a:hover { color: var(--asc-color-primary); }
+.asc-post-card .wp-block-post-excerpt { flex: 1; display: flex; flex-direction: column; color: var(--asc-color-text-muted); }
+.asc-post-card .wp-block-post-excerpt__excerpt { margin: 0; }
+.asc-post-card .wp-block-post-excerpt__more-text { margin: auto 0 0; padding-block-start: var(--asc-space-sm); font-weight: 600; }
+.asc-post-list .wp-block-query-pagination { margin-block-start: var(--asc-space-lg); gap: var(--asc-space-xs); font-weight: 600; }
+@media (max-width: 40rem) {
+	.asc-post-list .wp-block-post-template { gap: var(--asc-space-sm); }
+	.asc-post-card__title { font-size: 1.35rem; }
+}
+
+/* ---------- Hub pages (core Page List + .asc-hub-list): tappable cards ---------- */
+.asc-hub-list.wp-block-page-list {
+	list-style: none;
+	padding: 0;
+	margin-block: var(--asc-space-md);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+	gap: var(--asc-space-xs);
+}
+.asc-hub-list .wp-block-pages-list__item { margin: 0; }
+.asc-hub-list .wp-block-pages-list__item__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--asc-space-sm);
+	min-block-size: 3.5rem;
+	padding: var(--asc-space-sm) var(--asc-space-md);
+	background: var(--asc-color-surface);
+	border-radius: var(--asc-radius-md);
+	box-shadow: var(--asc-shadow-sm);
+	font-family: var(--asc-font-serif);
+	font-size: var(--asc-text-lg);
+	color: var(--asc-color-secondary);
+	text-decoration: none;
+	transition: box-shadow var(--asc-duration) var(--asc-ease), transform var(--asc-duration) var(--asc-ease), color var(--asc-duration) var(--asc-ease);
+}
+.asc-hub-list .wp-block-pages-list__item__link::after { content: "→"; font-family: var(--asc-font-sans); color: var(--asc-color-accent); }
+.asc-hub-list .wp-block-pages-list__item__link:hover { box-shadow: var(--asc-shadow-md); transform: translateY(-2px); color: var(--asc-color-primary); }
+
+/* ---------- People lists, second pattern: photo, then a name heading, then email ---------- */
+.wp-block-post-content:has(> figure + h3 + p a[href^="mailto:"]) > figure.wp-block-image:has(+ h3) {
+	margin-block: var(--asc-space-lg) var(--asc-space-xs);
+}
+.wp-block-post-content:has(> figure + h3 + p a[href^="mailto:"]) > figure.wp-block-image:has(+ h3) img {
+	inline-size: clamp(6rem, 4rem + 8vw, 9rem);
+	aspect-ratio: 1;
+	object-fit: cover;
+	object-position: 50% 20%;
+	border-radius: 50%;
+	box-shadow: var(--asc-shadow-sm);
+}
+.wp-block-post-content:has(> figure + h3 + p a[href^="mailto:"]) > figure.wp-block-image + h3 { margin-block: 0 0.15rem; text-transform: capitalize; }
+
+/* ---------- Tablets and phones ---------- */
+@media (max-width: 781px) {
+	/* Footer: link columns side by side instead of one long list (WordPress stacks columns here). */
+	.asc-site-footer .wp-block-columns {
+		display: grid !important;
+		grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+		gap: var(--asc-space-md) var(--asc-space-sm);
+	}
+	.asc-site-footer .wp-block-columns > .wp-block-column:first-child { grid-column: 1 / -1; }
+}
+@media (min-width: 40.01rem) and (max-width: 64rem) {
+	/* The full menu needs the room: the hero already offers "Plan Your Visit". */
+	.asc-site-header .wp-block-buttons.asc-header-cta { display: none; }
+	.asc-site-header .wp-block-navigation { gap: 1.1rem; white-space: nowrap; }
+	/* Service times as a 2 x 2 grid. */
+	.asc-service-times.wp-block-group { grid-template-columns: 1fr 1fr; }
+	.asc-time-card { border-inline-end: 0; border-block-end: 1px solid var(--asc-color-border); }
+	.asc-time-card:nth-child(odd) { border-inline-end: 1px solid var(--asc-color-border); }
+	.asc-time-card:nth-last-child(-n + 2) { border-block-end: 0; }
+}

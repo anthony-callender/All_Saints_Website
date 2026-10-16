@@ -1,0 +1,133 @@
+[
+  {
+    "label": "About",
+    "href": "/about",
+    "children": [
+      {
+        "label": "What We Believe",
+        "href": "/what-we-believe"
+      },
+      {
+        "label": "Our Vestry",
+        "href": "/our-vestry"
+      },
+      {
+        "label": "Church History",
+        "href": "/timeline"
+      },
+      {
+        "label": "Clergy and Staff",
+        "href": "/clergy-and-staff"
+      },
+      {
+        "label": "Current Job Openings",
+        "href": "/employment-opportunities"
+      },
+      {
+        "label": "The Newsletter",
+        "href": "/newsletter"
+      },
+      {
+        "label": "Events Calendar",
+        "href": "/calendar"
+      }
+    ]
+  },
+  {
+    "label": "Worship",
+    "href": "/worship",
+    "children": [
+      {
+        "label": "Sunday Services",
+        "href": "/sunday-services"
+      },
+      {
+        "label": "Livestream",
+        "href": "https://www.youtube.com/channel/UCOouhW9_VVwiVODtl0gDvVA"
+      },
+      {
+        "label": "Sermons",
+        "href": "/latest-sermons"
+      }
+    ]
+  },
+  {
+    "label": "Ministries",
+    "href": "/new-folder",
+    "children": [
+      {
+        "label": "Food Giveaways",
+        "href": "/monthly-food-giveaway"
+      },
+      {
+        "label": "Prayer",
+        "href": "/prayer"
+      },
+      {
+        "label": "Adult Formation",
+        "href": "/adult-discipleship"
+      },
+      {
+        "label": "Women",
+        "href": "/women"
+      },
+      {
+        "label": "Men",
+        "href": "/men"
+      },
+      {
+        "label": "Nursery",
+        "href": "/nursery"
+      },
+      {
+        "label": "Children",
+        "href": "/children"
+      },
+      {
+        "label": "Youth",
+        "href": "/youth"
+      },
+      {
+        "label": "Congregation Care Ministry",
+        "href": "/ccm"
+      },
+      {
+        "label": "Serve in the Community",
+        "href": "/serve-in-the-community"
+      }
+    ]
+  },
+  {
+    "label": "Resources",
+    "href": "/resources",
+    "children": [
+      {
+        "label": "Report Misconduct",
+        "href": "https://www.anglicandoma.org/report-misconduct"
+      }
+    ]
+  },
+  {
+    "label": "",
+    "href": "/search",
+    "children": []
+  },
+  {
+    "label": "Give",
+    "href": "/give",
+    "children": [
+      {
+        "label": "Give",
+        "href": "/giving"
+      },
+      {
+        "label": "Because You Gave",
+        "href": "/because-you-gave"
+      },
+      {
+        "label": "2026 Pledge Form",
+        "href": "/pledge"
+      }
+    ]
+  }
+]

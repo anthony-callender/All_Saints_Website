@@ -1,0 +1,70 @@
+/*
+ * Base: maps tokens onto the active theme with zero-specificity selectors
+ * (:where), so anything the editor sets in Avada Global Options / Global
+ * Styles still wins. Accessibility primitives live here.
+ */
+:where(body) {
+	background: var(--asc-color-background);
+	color: var(--asc-color-text);
+	font-family: var(--asc-font-sans);
+	font-size: var(--asc-text-base);
+	line-height: var(--asc-leading);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+:where(h1, h2, h3, h4) {
+	font-family: var(--asc-font-serif);
+	font-weight: 500;
+	line-height: var(--asc-leading-tight);
+	letter-spacing: var(--asc-tracking-tight);
+	text-wrap: balance;
+	color: var(--asc-color-secondary);
+}
+
+:where(h1) { font-size: var(--asc-text-h1); }
+:where(h2) { font-size: var(--asc-text-h2); }
+:where(h3) { font-size: var(--asc-text-h3); }
+:where(p, li) { text-wrap: pretty; }
+
+:where(a) {
+	color: var(--asc-color-link);
+	text-decoration-thickness: 0.08em;
+	text-underline-offset: 0.18em;
+	transition: color var(--asc-duration) var(--asc-ease);
+}
+:where(a:hover) { color: var(--asc-color-primary); }
+
+:where(img) { max-inline-size: 100%; block-size: auto; }
+
+/* Visible, consistent focus for keyboard users only. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+	outline: 3px solid var(--asc-color-focus);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
+::selection {
+	background: rgb(227 180 106 / 0.45);
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	block-size: 1px;
+	inline-size: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	word-wrap: normal !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

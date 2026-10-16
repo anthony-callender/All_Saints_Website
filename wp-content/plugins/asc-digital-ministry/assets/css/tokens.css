@@ -1,0 +1,75 @@
+/*
+ * All Saints' Church — design tokens.
+ *
+ * Derived from the existing brand (see docs/design-system.md):
+ *   Logo Jerusalem Cross: red #ff1923, blue #005ca9; serif caps wordmark.
+ *   Current site: navy #0b2a60, amber #d78d33, Adobe Garamond Pro + Proxima Nova.
+ * Text colours are darkened variants that meet WCAG AA on the page background.
+ * Mirror these values in Avada → Global Options (colors, typography, layout).
+ */
+:root {
+	/* Colour */
+	--asc-color-background: #f8f5ee;   /* warm parchment */
+	--asc-color-surface: #ffffff;
+	--asc-color-surface-alt: #efe9dd;
+	--asc-color-border: #e2dacb;
+	--asc-color-text: #1b2433;         /* ink navy, 14.9:1 on background */
+	--asc-color-text-muted: #4a5466;   /* 7.3:1 */
+	--asc-color-primary: #b3141e;      /* cross red, darkened for text/buttons (6.3:1 on white) */
+	--asc-color-primary-strong: #8e0f17;
+	--asc-color-link: #00539a;         /* cross blue (7.3:1) */
+	--asc-color-secondary: #0b2a60;    /* parish navy */
+	--asc-color-secondary-strong: #071d44;
+	--asc-color-accent: #b8741f;       /* amber, decorative/large text only */
+	--asc-color-accent-soft: #e3b46a;  /* amber on navy (8.1:1) */
+	--asc-color-on-dark: #f8f5ee;
+	--asc-color-focus: #00539a;
+
+	/* Typography — open-licence stand-ins for Adobe Garamond Pro / Proxima Nova */
+	--asc-font-serif: "EB Garamond", "Adobe Garamond Pro", Garamond, "Times New Roman", serif;
+	--asc-font-sans: "Source Sans 3", "Proxima Nova", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+	--asc-text-sm: clamp(0.9rem, 0.87rem + 0.1vw, 0.95rem);
+	--asc-text-base: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+	--asc-text-lg: clamp(1.2rem, 1.1rem + 0.45vw, 1.4rem);
+	--asc-text-h3: clamp(1.45rem, 1.25rem + 0.8vw, 1.85rem);
+	--asc-text-h2: clamp(2.1rem, 1.55rem + 2.2vw, 3.4rem);
+	--asc-text-h1: clamp(2.6rem, 1.8rem + 3.2vw, 4.6rem);
+	--asc-text-display: clamp(3rem, 1.9rem + 4.8vw, 6rem);
+	--asc-leading: 1.65;
+	--asc-leading-tight: 1.04;
+	--asc-tracking-tight: -0.022em;
+	--asc-measure: 68ch;
+
+	/* Layout */
+	--asc-content-width: 72rem;
+	--asc-content-wide: 86rem;
+	--asc-gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+
+	/* Shape */
+	--asc-radius-sm: 0.375rem;
+	--asc-radius-md: 1rem;
+	--asc-radius-lg: 1.75rem;
+	--asc-radius-pill: 999px;
+	--asc-shadow-sm: 0 1px 2px rgb(11 42 96 / 0.05), 0 6px 20px -10px rgb(11 42 96 / 0.18);
+	--asc-shadow-md: 0 28px 60px -28px rgb(11 42 96 / 0.45);
+
+	/* Space */
+	--asc-space-2xs: clamp(0.25rem, 0.2rem + 0.1vw, 0.375rem);
+	--asc-space-xs: clamp(0.5rem, 0.4rem + 0.2vw, 0.75rem);
+	--asc-space-sm: clamp(0.75rem, 0.6rem + 0.4vw, 1rem);
+	--asc-space-md: clamp(1.25rem, 1rem + 0.8vw, 2rem);
+	--asc-space-lg: clamp(2rem, 1.5rem + 1.5vw, 4rem);
+	--asc-space-xl: clamp(4rem, 2.4rem + 4.5vw, 8rem);
+
+	/* Motion */
+	--asc-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+	--asc-duration: 220ms;
+	--asc-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--asc-duration: 0ms;
+	}
+}

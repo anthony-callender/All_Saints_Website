@@ -1,0 +1,29 @@
+{
+  "_about": "Human-reviewed decisions for specific services. Facts here come from clergy records or from reviewing the service recording; nothing is inferred.",
+  "videos": {
+    "6vWOq_VIX7E": {
+      "title": "Gospel Conformity",
+      "preacher": "The Rev. Scott Bailey",
+      "scripture_references": [
+        "2 Corinthians 13:5-14"
+      ],
+      "audio_file": "AllSaints_Agent/upload-ready/2026-05-31-gospel-conformity/20260531-gospel-conformity.mp3",
+      "source": "AllSaints_Agent/upload-ready/2026-05-31-gospel-conformity/job-data.json (clergy sermon form + reviewed clean MP3)"
+    },
+    "KFolabovaWE": {
+      "skip": "Good Friday 2026: Passion reading, hymns and the Reproaches; no sermon (transcript reviewed 2026-10-04)"
+    },
+    "VcjGpuK-GhQ": {
+      "skip": "First Sunday of Christmas 2025: Lessons & Carols; no sermon (transcript reviewed 2026-10-04)"
+    },
+    "s5RJfC6juzk": {
+      "start_time": "00:31:52",
+      "end_time": "00:54:12",
+      "scripture_references": [
+        "Psalm 51"
+      ],
+      "note": "The livestream recorded no audio until about 32 minutes in, so this recording begins partway through the sermon.",
+      "source": "Reviewed 2026-10-04: audio silent (-84 dB) 10:00-31:50; sermon on Psalm 51 (verses 1-2, 4, 7, 13, 19 quoted); ends before the baptism at 55:12."
+    }
+  }
+}

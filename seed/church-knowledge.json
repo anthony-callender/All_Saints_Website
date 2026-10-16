@@ -1,0 +1,150 @@
+{
+  "_about": "Curated public facts for the website assistant. Every entry is drawn from the live-site audit (migration/source/pages). source = new-site path shown to visitors; legacy = audited page. Excluded on purpose: personal phone numbers/emails of volunteers, member news (birthdays, memorials), prayer requests, giving records, and facts that looked stale (FAQ youth meeting time, dated class sign-ups).",
+  "last_verified": "2026-10-02",
+  "entries": [
+    {
+      "title": "Sunday worship service times",
+      "source": "/worship/sunday-services/",
+      "legacy": "/sunday-services",
+      "body": "All Saints' Church holds Sunday morning services at 8:15 a.m. and 11 a.m. Both are Holy Eucharist in the Anglican tradition.\n\nServices generally last 90 minutes. Worship includes a mix of contemporary music and hymns, and the prayers are from the Book of Common Prayer (2019).\n\nNursery care and Children's Church are available during both Sunday services.\n\nA livestream of Sunday services is available on the church's YouTube channel."
+    },
+    {
+      "title": "Sunday School Hour (between services)",
+      "source": "/worship/sunday-services/",
+      "legacy": "/sunday-services",
+      "body": "Sunday School Hour is on Sundays from 9:45 a.m. to 10:45 a.m., between the two services. Adults study various aspects of the Bible or biblical principles, with course topics that vary through the seasons.\n\nChildren from PreK through 12th grade attend Sunday School during the Sunday School Hour. Nursery care is also available during this hour."
+    },
+    {
+      "title": "Wednesday morning Eucharist",
+      "source": "/worship/wednesday-eucharist/",
+      "legacy": "/wednesday-morning-eucharist",
+      "body": "All Saints' holds a Wednesday Morning Eucharist at 6:30 a.m. and at 8 a.m. The services typically last 35 minutes and are conducted using the Book of Common Prayer."
+    },
+    {
+      "title": "Location, address and contact information",
+      "source": "/contact/",
+      "legacy": "/ (site footer)",
+      "body": "All Saints' Church is located at 14851 Gideon Drive, Woodbridge, Virginia 22192.\n\nThe church office phone number is 703-670-0093 and the office email is office@allsaintswoodbridge.org.\n\nTo add an event to the church calendar and newsletter, email communications@allsaintswoodbridge.org."
+    },
+    {
+      "title": "What to expect when visiting: dress, communion and welcome",
+      "source": "/visit/",
+      "legacy": "/sunday-services and /faqs",
+      "body": "All are invited to worship at All Saints' in the Anglican tradition of Holy Eucharist. You can expect to see a range of dress from casual to formal; visitors are welcome to dress as they are most comfortable.\n\nCommunion is offered every Sunday during both services. Communion is open to all baptized believers, regardless of religious tradition. Baptized infants and children may take communion also.\n\nAn order of service for Sundays is available on the Sunday Services page. Questions can be directed to the church office at 703-670-0093."
+    },
+    {
+      "title": "Building accessibility",
+      "source": "/visit/#directions",
+      "legacy": "/sunday-services",
+      "body": "The All Saints' building has accessible parking convenient to front and rear entrances; ramps from street to curb level with no additional steps to enter the building; accessible bathrooms with grab rails, larger stalls and angled mirrors; and exterior doors that lock in the open position so a guest can enter without holding the door open.\n\nFor questions or concerns about accessibility, call the main office at 703-670-0093."
+    },
+    {
+      "title": "Livestream and sermons online",
+      "source": "/sermons/",
+      "legacy": "/ and /latest-sermons",
+      "body": "Sunday services can be watched live on the All Saints' Church YouTube channel (youtube.com/channel/UCOouhW9_VVwiVODtl0gDvVA). Recent sermons, with audio, are available in the Sermons section of the website."
+    },
+    {
+      "title": "Children's Church and Children's Ministry",
+      "source": "/ministries/children/",
+      "legacy": "/children",
+      "body": "The Children's Ministry at All Saints' Church serves infants, toddlers, and children through the fifth grade.\n\nDuring both the 8:15 a.m. and 11 a.m. services, children ages 3 through fifth grade are invited to the Children's Wing for Children's Church, where a trained team leads engaging, interactive, age-appropriate Bible lessons. Children return to the adult service at the passing of the peace in time to receive communion or a blessing.\n\nThe Children's Ministry Director is Tara Pedersen."
+    },
+    {
+      "title": "Nursery care",
+      "source": "/ministries/nursery/",
+      "legacy": "/nursery",
+      "body": "All Saints' offers three nurseries for children from birth through age four: Infant, Wobbler, and Toddler. They are located just down the hall from the Sanctuary inside the Children's Wing and are staffed by trained paid employees and volunteers.\n\nNurseries are open on Sunday mornings for the 8:15 a.m. service, the 9:45-10:45 a.m. hour, and the 11 a.m. service. Parents are welcome in any nursery at any time for nursing, feeding, changing or comforting their children.\n\nOn a first visit, families register their children at the Welcome/Check-in center just outside the Children's Wing entrance. Parents and children receive matching ID bracelets, and children are released only when the bracelets match. Please do not bring sick children to the nursery.\n\nQuestions: Tara Pedersen or Asteir Shokai at 703-670-0093."
+    },
+    {
+      "title": "Youth ministry (middle and high school)",
+      "source": "/ministries/youth/",
+      "legacy": "/youth",
+      "body": "All Saints' Youth Ministry offers events and opportunities for middle school and high school students. The Youth Director is Rudy Arias.\n\nTo be included in youth group emails and newsletters, or to ask about current youth meeting times and events, contact youth@allsaintswoodbridge.org."
+    },
+    {
+      "title": "Adult Formation (Bible study and classes)",
+      "source": "/ministries/adult-formation/",
+      "legacy": "/adult-discipleship",
+      "body": "Adult Formation at All Saints' offers Bible studies, small groups, and workshops that explore scripture, theology, and practical applications of faith. It seeks to meet curious seekers, newly baptized Christians, and seasoned Christians where they are.\n\nAdult Formation opportunities are offered during the Sunday School Hour (9:45-10:45 a.m.) and throughout the week. On Sunday mornings, classes meet in small groups. Current offerings are published in the church's communications.\n\nQuestions: Trina McCarthy, Adult Formation Director, at adultdiscipleship@allsaintswoodbridge.org."
+    },
+    {
+      "title": "Men's ministry",
+      "source": "/ministries/men/",
+      "legacy": "/men",
+      "body": "All Saints' Men's Ministry seeks to promote the spiritual growth of men, build up the role of men in their families, be intergenerational, and serve through existing and new ministries in the church.\n\nRegular activities include supporting Sunday coffee hour once a month and Men's Prayer Breakfasts, held bi-monthly on the third Saturday of odd-numbered months. Announcements appear in the weekly newsletter. For details, contact the church office at 703-670-0093."
+    },
+    {
+      "title": "Women's ministry",
+      "source": "/ministries/women/",
+      "legacy": "/women",
+      "body": "The women's ministry at All Saints' exists to transform women's lives through relationships with Jesus Christ and with one another, and to provide meaningful opportunities for all women to grow individually and together.\n\nGroups include the Dorcas (needlework) Ministry, which meets the first Saturday of every month from September through June, 9:30-11 a.m., in the Administrative Conference Room; Moms in Prayer, open to all women interested in gathering for prayer; and MomCo meetups for moms, with nursery care. Women's events are announced in the weekly newsletter."
+    },
+    {
+      "title": "How to request prayer",
+      "source": "/prayer/",
+      "legacy": "/prayer and /faqs",
+      "body": "All Saints' Church has been called by God to be a \"House of Prayer\" and welcomes prayer requests and praise reports for you, your family members or friends.\n\nPrayer requests submitted through the Prayer page are prayed for by the intercessory team for two weeks. You can also phone the church office at 703-670-0093.\n\nDuring the Prayers of the People in Sunday worship there is a time to lift up names aloud, and prayer teams are available at the back of the church during Communion. The church also has a dedicated Prayer Room; contact the office for access."
+    },
+    {
+      "title": "Congregation care and pastoral support",
+      "source": "/ministries/congregation-care/",
+      "legacy": "/ccmblog",
+      "body": "The Congregational Care Ministry provides care to members of the congregation, including practical assistance coordinators, home communion, Stephen Ministers, a meals ministry, transportation to church and doctor appointments, handyman help for the elderly and infirm, support groups, prayer ministry, and visitation for the homebound and lonely.\n\nTo receive care or to serve, contact Deacon Julie Tilton through the church office at 703-670-0093."
+    },
+    {
+      "title": "Food pantry and monthly food giveaway",
+      "source": "/ministries/food-pantry/",
+      "legacy": "/monthly-food-giveaway",
+      "body": "All Saints' holds a monthly food giveaway on the second Saturday of every month from 10 a.m. to noon. Anyone who needs groceries is welcome. If you need groceries sooner, contact the church office at 703-670-0093. (Spanish: El 2ndo sábado de cada mes entre 10 a.m. y 12 p.m.)\n\nNon-perishable food donations are accepted at any time: bring them to the Atrium during any service or use the bin outside the main doors. Especially needed: Maseca (masa instantánea), pancake mix, cartons of oats, cereal and soup. Fresh produce, bread and milk products can be dropped off the Friday evening before each giveaway, 4:30-6:30 p.m.\n\nVolunteers are needed before, during and after each giveaway."
+    },
+    {
+      "title": "Serving in the community",
+      "source": "/ministries/serve/",
+      "legacy": "/serve-in-the-community",
+      "body": "All Saints' serves its neighbors through the monthly Food Giveaway; a partnership with the Hilda Barg Homeless Prevention Center to provide meals for one week, twice a year; prison ministry through Kairos, including baking homemade cookies for Kairos weekends; and the Dorcas Ministry, which creates and blesses items for distribution to the poor, the sick, and the needy."
+    },
+    {
+      "title": "How to give",
+      "source": "/give/",
+      "legacy": "/giving",
+      "body": "You can give to All Saints' Church by mailing a check to 14851 Gideon Drive, Woodbridge, VA 22192, by dropping off a check at the church office, or online through Breeze or PayPal (links on the Give page). Text giving is also available.\n\nOnline givers may choose to add a small amount to offset processing costs; the donor is always credited with the full amount given."
+    },
+    {
+      "title": "What All Saints' believes",
+      "source": "/about/what-we-believe/",
+      "legacy": "/what-we-believe",
+      "body": "All Saints' Church is rooted in the historic interpretation of the Christian Bible, summarized in the words of the Apostles' and Nicene Creeds. Its specific theological convictions are expressed in the Thirty-Nine Articles. Each Sunday the congregation confesses its faith in the words of the Nicene Creed.\n\nFoundational documents: the Holy Bible (ESV), the Nicene Creed and the Apostles' Creed. Additional documents: the Book of Common Prayer, the Thirty-Nine Articles of Religion, the Jerusalem Declaration, and To Be a Christian: An Anglican Catechism.\n\nAll Saints' is part of the Anglican Church in North America and is under Bishop Chris Warner of the Diocese of the Mid-Atlantic."
+    },
+    {
+      "title": "Clergy and staff",
+      "source": "/about/clergy-and-staff/",
+      "legacy": "/clergy-and-staff",
+      "body": "Clergy and staff of All Saints' Church: The Rev. Scott Bailey, Rector; The Rev. Maryanna Stumbaugh, Associate Rector; The Rev. Patricio Rojas, Associate Rector for Spanish-Language Ministry; The Rev. Julie Tilton, Deacon; The Rev. Andy Terry, Deacon; Trina McCarthy, Adult Formation Director; Rudy Arias, Youth Director; Tara Pedersen, Children's Ministry Director; Asteir Shokai, Children's Ministry Assistant; Ryna Ebwe, Parish Administrator; Beth Bogard Vander Wel, Communications Director.\n\nThe bishop is the Rt. Rev. Christopher S. Warner, Bishop of the Diocese of the Mid-Atlantic. The Archbishop of the Anglican Church in North America is the Most Rev. Stephen D. Wood."
+    },
+    {
+      "title": "Baptism",
+      "source": "/worship/baptism/",
+      "legacy": "/baptism",
+      "body": "Baptism takes place during Sunday morning worship on or near several occasions each year: Pentecost, All Saints' Day, the Baptism of Our Lord (the Sunday after the Epiphany), and Easter Eve (a Saturday evening service). Baptism usually also takes place once during the summer. A pre-baptismal discernment class is required; contact the church office at 703-670-0093 for the next class date."
+    },
+    {
+      "title": "Events calendar and weekly newsletter",
+      "source": "/events/",
+      "legacy": "/calendar and /newsletter",
+      "body": "The Events Calendar on the website lists All Saints' Church services, events, classes, and ministry activities.\n\nThe weekly church newsletter is sent each Thursday with upcoming events and announcements. To receive it by email, call the church office at 703-670-0093. To add an event to the calendar and newsletter, email communications@allsaintswoodbridge.org."
+    },
+    {
+      "title": "Church history and the Jerusalem Cross",
+      "source": "/about/history/",
+      "legacy": "/timeline and /jerusalem-cross",
+      "body": "All Saints' roots date back to the first Anglican church established in Prince William County in 1667. All Saints' was formed in 1980 by the merger of St. Martin's (Dumfries-Quantico) and Holy Spirit (Dale City), held its first service in its building on Saratoga Lane in Dale City in 1983, and later moved to its current home on Gideon Drive in Woodbridge.\n\nBehind the altar hangs the Jerusalem Cross, which has hung in the same place in both the Saratoga Lane and Gideon Drive buildings. It is a large cross surrounded by four smaller crosses; the four small crosses are said to symbolize the four Gospels proclaimed to the four corners of the earth, and the large cross the person of Christ. It is also the church's logo."
+    },
+    {
+      "title": "Safeguarding children",
+      "source": "/about/safeguarding/",
+      "legacy": "/protecting-gods-children",
+      "body": "All Saints' takes seriously the protection of children and vulnerable adults. Practices include careful screening of all staff and volunteers who work with children (applications, reference checks, and background checks), a two-person rule at all times, and a coded check-in/check-out system with one entrance to the Children's Wing. Contact Tara Pedersen, Children's Ministry Director, for more information. Misconduct can be reported to the Diocese of the Mid-Atlantic at anglicandoma.org/report-misconduct."
+    }
+  ]
+}

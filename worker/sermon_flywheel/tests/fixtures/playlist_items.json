@@ -1,0 +1,13 @@
+{
+  "items": [
+    {"snippet": {"title": "Trinity Sunday 2026", "publishedAt": "2026-06-01T14:00:00Z", "description": "Sunday service",
+                 "thumbnails": {"high": {"url": "https://i.ytimg.com/vi/6vWOq_VIX7E/hqdefault.jpg"}},
+                 "resourceId": {"videoId": "6vWOq_VIX7E"}},
+     "contentDetails": {"videoId": "6vWOq_VIX7E", "videoPublishedAt": "2026-06-01T14:00:00Z"}},
+    {"snippet": {"title": "Private video", "publishedAt": "2026-05-30T00:00:00Z", "resourceId": {"videoId": "zzzzzzzzzzz"}},
+     "contentDetails": {"videoId": "zzzzzzzzzzz"}},
+    {"snippet": {"title": "Bad id", "resourceId": {"videoId": "nope"}}, "contentDetails": {"videoId": "nope"}},
+    {"snippet": {"title": "VBS Promo", "publishedAt": "2026-05-20T10:00:00Z", "resourceId": {"videoId": "AAAAAAAAAAA"}},
+     "contentDetails": {"videoId": "AAAAAAAAAAA"}}
+  ]
+}

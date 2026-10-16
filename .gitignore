@@ -1,0 +1,30 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.ddev/.env
+tmp/
+
+# Large/local media
+migration-assets/
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.webm
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# WordPress core + generated files live in the DDEV docroot; only our plugin is tracked.
+/wordpress/
+
+# Legacy agent keeps its own git history
+/AllSaints_Agent/

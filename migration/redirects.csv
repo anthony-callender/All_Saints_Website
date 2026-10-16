@@ -1,0 +1,155 @@
+old_url,new_url,status_code,reason
+/whats-new,/news/,301,REDIRECT
+/whats-new/*,/news/,301,Archived collection (ARCHIVE); wildcard rule
+/latest-sermons,/sermons/,301,IMPROVE: Becomes Sermon CPT archive (media library layout).
+/latest-sermons/missionary-guest-speaker-1,/sermons/missionary-guest-speaker-1/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/unchanging-hope-easter-ii,/sermons/unchanging-hope-easter-ii/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/matters-of-first-importance-easter-sunday,/sermons/matters-of-first-importance-easter-sunday/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/promises-we-can-trust-the-great-vigil-of-easter,/sermons/promises-we-can-trust-the-great-vigil-of-easter/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/maundy-thursday-meditation,/sermons/maundy-thursday-meditation/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/palm-sunday-expectations,/sermons/palm-sunday-expectations/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/eternal-hope-and-godly-grief-lent-v,/sermons/eternal-hope-and-godly-grief-lent-v/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/lessons-on-understanding-healing-and-faith,/sermons/lessons-on-understanding-healing-and-faith/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/grace-greater-than-all-our-sin,/sermons/grace-greater-than-all-our-sin/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/the-spirit-is-like-the-wind,/sermons/the-spirit-is-like-the-wind/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/temptation-and-transformation-lent-i,/sermons/temptation-and-transformation-lent-i/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/ash-wednesday,/sermons/ash-wednesday/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/christs-transfiguration-and-true-transformation,/sermons/christs-transfiguration-and-true-transformation/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/world-missions-sunday-guest-preacher,/sermons/world-missions-sunday-guest-preacher/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/made-in-gods-image-life-sunday,/sermons/made-in-gods-image-life-sunday/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/the-five-ws-of-jesus-baptism,/sermons/the-five-ws-of-jesus-baptism/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/what-is-god-doing-pondering-and-following-christmas-ii,/sermons/what-is-god-doing-pondering-and-following-christmas-ii/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/christmas-day,/sermons/christmas-day/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bethlehemgods-kind-of-place,/sermons/bethlehemgods-kind-of-place/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/the-virgin-birthwhy-does-it-matter,/sermons/the-virgin-birthwhy-does-it-matter/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/the-greatest-gift,/sermons/the-greatest-gift/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/sharing-our-faith,/sermons/sharing-our-faith/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/christ-will-returnhow-then-should-we-live-advent-i,/sermons/christ-will-returnhow-then-should-we-live-advent-i/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/thanksgiving-day,/sermons/thanksgiving-day/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/christ-and-extending-his-kingdom-feast-of-christ-the-king,/sermons/christ-and-extending-his-kingdom-feast-of-christ-the-king/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/guest-missions-speaker,/sermons/guest-missions-speaker/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/a-parable-of-two-prayers,/sermons/a-parable-of-two-prayers/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/true-unfailing-hope-for-real-life-stewardship-focus,/sermons/true-unfailing-hope-for-real-life-stewardship-focus/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/missionary-guest-speaker,/sermons/missionary-guest-speaker/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/earthly-wealth-and-kingdom-stewardship-stewardship-focus,/sermons/earthly-wealth-and-kingdom-stewardship-stewardship-focus/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/true-and-godly-hope-lived-out,/sermons/true-and-godly-hope-lived-out/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bearing-witness-to-jesus-in-actssermon-7,/sermons/bearing-witness-to-jesus-in-actssermon-7/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bearing-witness-to-jesus-in-actssermon-6,/sermons/bearing-witness-to-jesus-in-actssermon-6/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bearing-witness-to-jesus-in-actssermon-5,/sermons/bearing-witness-to-jesus-in-actssermon-5/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bearing-witness-to-jesus-in-actssermon-4b,/sermons/bearing-witness-to-jesus-in-actssermon-4b/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bearing-witness-to-jesus-in-actssermon-3,/sermons/bearing-witness-to-jesus-in-actssermon-3/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/jesus-our-true-north-vbs-celebration-sunday,/sermons/jesus-our-true-north-vbs-celebration-sunday/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bearing-witness-to-jesus-in-actssermon-2,/sermons/bearing-witness-to-jesus-in-actssermon-2/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/bearing-witness-to-jesus-in-actssermon-1,/sermons/bearing-witness-to-jesus-in-actssermon-1/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/godly-and-useful-knowedge,/sermons/godly-and-useful-knowedge/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/pentecost-promise-and-power-pentecost-sunday,/sermons/pentecost-promise-and-power-pentecost-sunday/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/three-people-three-different-paths-to-deliverance,/sermons/three-people-three-different-paths-to-deliverance/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/a-miracle-confusion-and-gospel-clarity,/sermons/a-miracle-confusion-and-gospel-clarity/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/jealousy-and-gospel-proclamation,/sermons/jealousy-and-gospel-proclamation/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/truth-abundant-good-shepherd-sunday,/sermons/truth-abundant-good-shepherd-sunday/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/latest-sermons/encountering-the-risen-jesus,/sermons/encountering-the-risen-jesus/,301,"KEEP: Imported as Sermon CPT (title, preacher, date, scripture, MP3)."
+/teachings-list,/ministries/adult-formation/,301,MERGE
+/teachings-list/*,/ministries/adult-formation/,301,Archived collection (ARCHIVE); wildcard rule
+/the-newsletter,/news/,301,IMPROVE: Announcements/newsletter collection becomes WordPress Posts.
+/the-newsletter/*,/news/,301,Archived collection (ARCHIVE); wildcard rule
+/newsletter-archive,/news/,301,ARCHIVE: 289 historical issues; retain export offline.
+/newsletter-archive/*,/news/,301,Archived collection (ARCHIVE); wildcard rule
+/asy-calendar,/events/,301,REDIRECT: Youth calendar collection superseded by the main Google Calendar.
+/asy-calendar/*,/events/,301,Archived collection (ARCHIVE); wildcard rule
+/christian-education-options,/ministries/adult-formation/,301,MERGE
+/christian-education-options/*,/ministries/adult-formation/,301,Archived collection (ARCHIVE); wildcard rule
+/stewardship-2022,/give/,301,"ARCHIVE: Slug says 2022, title says 2025."
+/stewardship-2022/*,/give/,301,Archived collection (ARCHIVE); wildcard rule
+/lent-2022-devotionals,/worship/,301,ARCHIVE: Seasonal; recreate each year as news post or seasonal page.
+/lent-2022-devotionals/*,/worship/,301,Archived collection (ARCHIVE); wildcard rule
+/books,/ministries/adult-formation/,301,MERGE
+/books/*,/ministries/adult-formation/,301,Archived collection (ARCHIVE); wildcard rule
+/onlineresources,/ministries/adult-formation/,301,MERGE
+/sundaymorningoptions,/visit/,301,MERGE: Sunday-morning details merged into Plan Your Visit.
+/sundaymorningoptions/*,/visit/,301,Archived collection (ARCHIVE); wildcard rule
+/ccmblog,/ministries/congregation-care/,301,MERGE: Blog-format care page (2022 'Guest User' posts) becomes one page. KB source.
+/ccmblog/*,/ministries/congregation-care/,301,Archived collection (MERGE); wildcard rule
+/asc-outreach-budget,/ministries/serve/,301,REVIEW: Outreach budget pages: confirm they are meant to be public.
+/asc-outreach-budget/*,/ministries/serve/,301,Archived collection (REVIEW); wildcard rule
+/family-resources,/ministries/children/,301,REVIEW
+/family-resources/*,/ministries/children/,301,Archived collection (REVIEW); wildcard rule
+/fall-ministry-launch-2023,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/fall-ministry-launch-2023/*,/ministries/,301,Archived collection (ARCHIVE); wildcard rule
+/home-page,/,301,REDIRECT: Legacy duplicate homepage.
+/holy-week-services,/worship/,301,ARCHIVE: Seasonal; recreate each year as news post or seasonal page.
+/scuba-vbs-snack-donations,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/scuba-vbs-snack-donations/*,/ministries/,301,Archived collection (ARCHIVE); wildcard rule
+/lent-2026,/worship/,301,ARCHIVE: Seasonal; recreate each year as news post or seasonal page.
+/lent-2026/*,/worship/,301,Archived collection (ARCHIVE); wildcard rule
+/sunday-services,/worship/sunday-services/,301,IMPROVE: Primary service-times/what-to-expect source. KB source.
+/what-we-believe,/about/what-we-believe/,301,KEEP: Theology preserved verbatim. KB source.
+/our-vestry,/about/vestry/,301,KEEP
+/children,/ministries/children/,301,IMPROVE: KB source.
+/youth,/ministries/youth/,301,KEEP: KB source.
+/women,/ministries/women/,301,KEEP: KB source.
+/men,/ministries/men/,301,KEEP: Contains a dated event list; keep events in calendar instead. KB source.
+/serve-in-the-community,/ministries/serve/,301,MERGE: KB source.
+/protecting-gods-children,/about/safeguarding/,301,KEEP: Safeguarding policy. KB source.
+/nursery,/ministries/nursery/,301,KEEP: KB source.
+/pledge,/give/pledge/,301,REVIEW: Pledge form; needs form plugin.
+/sick-child-nursery-policy,/ministries/nursery/,301,MERGE
+/suggested-small-group-topics,/ministries/adult-formation/,301,MERGE
+/faqs,/visit/faq/,301,IMPROVE: Question/answer pairs are out of order on the live page (answers appear under the wrong questions); rebuild as accordion. KB source.
+/upton-family-cemetery,/about/history/upton-family-cemetery/,301,KEEP
+/jerusalem-cross,/about/jerusalem-cross/,301,KEEP: Core identity content (logo symbolism). KB source.
+/rooted-and-growing-resources,/ministries/children/curriculum/,301,REVIEW: 20 curriculum PDFs; confirm still in use.
+/wednesday-morning-eucharist,/worship/wednesday-eucharist/,301,KEEP: KB source.
+/home,/,301,REDIRECT: Legacy duplicate homepage.
+/timeline,/about/history/,301,KEEP: Parish history since 1980 (roots to 1667).
+/photo-gallery,/about/photo-gallery/,301,KEEP: Source of authentic parish photography.
+/whats-new-this-week,/news/,301,REDIRECT
+/home-communion,/ministries/congregation-care/,301,REVIEW: Survey form.
+/sunday,/visit/,301,MERGE: Sunday-morning details merged into Plan Your Visit.
+/because-you-gave,/give/because-you-gave/,301,KEEP
+/giving,/give/,301,"KEEP: Online giving via existing Breeze/PayPal links (no payment system built). KB source (how to give, not giving records)."
+/vestry-nominees,/about/vestry/,301,ARCHIVE: Seasonal (annual meeting).
+/road-to-resurrection,/worship/,301,ARCHIVE: Seasonal; recreate each year as news post or seasonal page.
+/volunteer,/ministries/serve/,301,MERGE: KB source.
+/about-vbs,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/preschool-children,/ministries/children/,301,MERGE: Duplicative children's pages consolidated.
+/fallministrylaunch,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/welcome-to-all-saints-church,/visit/,301,REDIRECT: Holds expired Christmas 2023 schedule + newsletter list; superseded by Plan Your Visit.
+/lent2024,/worship/,301,ARCHIVE: Seasonal; recreate each year as news post or seasonal page.
+/employment-opportunities,/about/employment/,301,REVIEW: Confirm openings are current before launch.
+/register,/ministries/nursery/,301,"REVIEW: Child registration form; needs form plugin, collects children's data (not KB)."
+/adult-discipleship,/ministries/adult-formation/,301,IMPROVE: Renamed to match current 'Adult Formation' language. KB source.
+/kairos,/ministries/women/,301,MERGE: Sub-ministries become sections on Women's page.
+/serving-those-in-need,/ministries/serve/,301,MERGE: KB source.
+/monthly-food-giveaway,/ministries/food-pantry/,301,KEEP: Bilingual (EN/ES) content preserved. KB source.
+/childrens-church,/ministries/children/,301,MERGE: Duplicative children's pages consolidated.
+/story,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/moms-prayer,/ministries/women/,301,MERGE: Sub-ministries become sections on Women's page.
+/momco,/ministries/women/,301,MERGE: Sub-ministries become sections on Women's page.
+/childrens-ministry,/ministries/children/,301,MERGE: Duplicative children's pages consolidated.
+/pray-for-child,/prayer/,301,REVIEW: Form-only page; replace with prayer form.
+/sunday-school,/ministries/children/,301,MERGE: Duplicative children's pages consolidated.
+/new-page,/ministries/children/,301,MERGE: Duplicative children's pages consolidated.
+/baptism-class-for-families,/worship/baptism/,301,MERGE: Empty page (form/embed only).
+/new-page-5,/ministries/children/,301,REVIEW: 'First Communion Preparation' page has no text content.
+/dorcas,/ministries/women/,301,MERGE: Sub-ministries become sections on Women's page.
+/baptism,/worship/baptism/,301,IMPROVE: Contains expired 2024 class date. KB source (general policy).
+/confirmation,/worship/confirmation/,301,KEEP
+/graduates,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/music,/worship/music/,301,KEEP
+/graduates-2024,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/life-saving,/ministries/,301,ARCHIVE: Seasonal/one-off event pages.
+/rooted-and-growing-example,/ministries/children/,301,ARCHIVE
+/calendar,/events/,301,IMPROVE: Keep existing Google Calendar embed (communications@ calendar).
+/clergy-and-staff,/about/clergy-and-staff/,301,"KEEP: Staff photos to migrate. KB source (names/roles only, no personal data)."
+/new-page-3,/about/history/gideon-drive/,301,KEEP: Unhelpful legacy slug; history of current building.
+/about,-,301,REVIEW: Squarespace nav folder (not a page); replaced by WordPress menu + hub pages.
+/worship,-,301,REVIEW: Squarespace nav folder (not a page); replaced by WordPress menu + hub pages.
+/ccm,/ministries/congregation-care/,301,MERGE: Blog-format care page (2022 'Guest User' posts) becomes one page. KB source.
+/new-folder,-,301,REVIEW: Squarespace nav folder (not a page); replaced by WordPress menu + hub pages.
+/resources,-,301,REVIEW: Squarespace nav folder (not a page); replaced by WordPress menu + hub pages.
+/search,/?s=,301,REDIRECT: Native WordPress search.
+/give,-,301,REVIEW: Squarespace nav folder (not a page); replaced by WordPress menu + hub pages.
+/service-videos,https://www.youtube.com/channel/UCOouhW9_VVwiVODtl0gDvVA/streams,301,Legacy shortcut used on homepage
+/pgc,/about/safeguarding/,301,Legacy shortcut (Protecting God's Children)
+/road,/ministries/,301,Legacy shortcut to archived Road to Resurrection page
+/sermon-form,/wp-admin/post-new.php?post_type=sermon,302,Hidden clergy sermon form; replaced by worker + editor review
